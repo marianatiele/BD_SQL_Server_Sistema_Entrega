@@ -1,22 +1,22 @@
 use teste;
 -- SQL Server 
-/* Lógico_Sistema_Entrega: */
+/* LÃ³gico_Sistema_Entrega: */
 
 create table Cliente (
     cpf varchar(11),
     nome varchar(50),
     telefone bigint,
-	cidade varchar (50),
-	rua varchar(50),
-	bairro varchar(50),
-	num_residencia integer,
+    cidade varchar (50),
+    rua varchar(50),
+    bairro varchar(50),
+    num_residencia integer,
 	primary key (cpf)
 );
 
 create table  Produto (
     cod_produto integer,
     item varchar(50),
-	estoque integer,
+    estoque integer,
     preco money,
 	primary key(cod_produto)
 );
@@ -25,13 +25,13 @@ create table Pedido (
     itens varchar (25),
     total_pedido money,
     cpf varchar(11),
-	primary key(cod_pedido),
-	foreign key (cpf) references Cliente (cpf) 
-	on delete cascade on update cascade,
+    primary key(cod_pedido),
+    foreign key (cpf) references Cliente (cpf) 
+    on delete cascade on update cascade,
 );
 
 create table Possui (
-    cod_pedido integer,
+    	cod_pedido integer,
 	cod_produto integer,
 	quantidade integer,
 	foreign key (cod_pedido) references Pedido (cod_pedido)
@@ -45,10 +45,10 @@ create table Possui (
 create table Entregador (
     cnh varchar(11),
     nome varchar(50),
-	telefone bigint,
+    telefone bigint,
     cidade varchar(50),
     rua varchar(50),
-	bairro varchar(50),
+    bairro varchar(50),
     num_residencia integer,
 	primary key(cnh)
 );
@@ -60,21 +60,13 @@ create table Entrega (
     data date,
     cnh varchar(11),
     cod_pedido integer,
-	primary key (cod_entrega),
+    primary key (cod_entrega),
 
-	foreign key (cnh) references Entregador (cnh) 
-	on delete cascade on update cascade,
+    foreign key (cnh) references Entregador (cnh) 
+     on delete cascade on update cascade,
 	
-	foreign key (cod_pedido) references Pedido (cod_pedido)
+    foreign key (cod_pedido) references Pedido (cod_pedido)
 	on delete cascade on update cascade
 );
 
 
-
----
-drop table Possui
-drop table Produto
-drop table Entrega
-drop table Entregador
-drop table Pedido
-drop table Cliente
