@@ -2,7 +2,7 @@
 
 O objetivo do projeto é construir uma modelagem de banco de dados relacional eficiente, normalizada e com integridade referencial, aplicando boas práticas de modelagem conceitual, lógica e física.
 
-![image](https://github.com/user-attachments/assets/a2c463ea-c628-45ba-b7e3-1825ad1c2689)
+
 
 
 🎯 Requisitos Funcionais (RF):
