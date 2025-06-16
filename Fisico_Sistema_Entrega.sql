@@ -1,39 +1,39 @@
 use teste;
 -- SQL Server 
-/* Lógico_Sistema_Entrega: */
+/* LÃ³gico_Sistema_Entrega: */
 
 create table Cliente (
-    cpf varchar(11),
-    nome varchar(50),
-    telefone bigint,
-	cidade varchar (50),
-	rua varchar(50),
-	bairro varchar(50),
-	num_residencia integer,
+    cpf char(11) not null,
+    nome varchar(50) not null,
+    telefone bigint not null,
+	cidade varchar (50) not null,
+	rua varchar(50) not null,
+	bairro varchar(50) not null,
+	num_residencia integer not null,
 	primary key (cpf)
 );
 
 create table  Produto (
-    cod_produto integer,
-    item varchar(50),
-	estoque integer,
-    preco money,
-	primary key(cod_produto)
+    cod_produto integer not null,
+    item varchar(50) not null,
+    estoque integer not null,
+    preco money not null,
+     primary key(cod_produto)
 );
 create table Pedido (
-    cod_pedido integer,
-    itens varchar (25),
-    total_pedido money,
-    cpf varchar(11),
+    cod_pedido integer not null,
+    itens varchar (25) not null,
+    total_pedido money not null,
+    cpf char(11) not null,
 	primary key(cod_pedido),
 	foreign key (cpf) references Cliente (cpf) 
 	on delete cascade on update cascade,
 );
 
 create table Possui (
-    cod_pedido integer,
-	cod_produto integer,
-	quantidade integer,
+        cod_pedido integer not null,
+	cod_produto integer not null,
+	quantidade integer not null,
 	primary key (cod_pedido, cod_produto),
 	foreign key (cod_pedido) references Pedido (cod_pedido)
 	on delete cascade on update cascade,
@@ -44,23 +44,23 @@ create table Possui (
 );
 
 create table Entregador (
-    cnh varchar(11),
-    nome varchar(50),
-	telefone bigint,
-    cidade varchar(50),
-    rua varchar(50),
-	bairro varchar(50),
-    num_residencia integer,
-	primary key(cnh)
+    cnh char(11) not null,
+    nome varchar(50) not null,
+    telefone bigint not null,
+    cidade varchar(50) not null,
+    rua varchar(50) not null,
+    bairro varchar(50) not null,
+    num_residencia integer not null,
+    primary key(cnh)
 );
 
 create table Entrega (
-    cod_entrega integer,
-    avaliacao varchar(25),
-    status varchar (15),
-    data date,
-    cnh varchar(11),
-    cod_pedido integer,
+    cod_entrega integer not null,
+    avaliacao varchar(25) not null,
+    status varchar (15) not null,
+    data date not null,
+    cnh char(11) not null,
+    cod_pedido integer not null,
 	primary key (cod_entrega),
 
 	foreign key (cnh) references Entregador (cnh) 
