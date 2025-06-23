@@ -5,11 +5,11 @@ O objetivo do projeto é construir uma modelagem de banco de dados relacional ef
 
 
 
-🎯 Requisitos Funcionais (RF):
+## Requisitos Funcionais 
 A empresa vende diversos produtos, seus clientes podem fazer pedidos com um ou mais produto, cada pedido gera uma entrega, cada entregador é responsável por cada entrega.
 É necessário saber quando o pedido foi feito, quando foi entregue e o status da entrega.
 
-🧱 Mdelagem:
+## Mdelagem
 Crei um modelo Conceitual, lógico e físico para o banco de dados SQL Server, apliquei a normalização até a 3FN.
 As entidade são:: Cliente, Pedido, Produto, Entrega e Entregador. 
 
