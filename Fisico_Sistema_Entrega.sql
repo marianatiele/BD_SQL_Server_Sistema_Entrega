@@ -70,15 +70,10 @@ create table Entrega (
 	on delete cascade on update cascade
 );
 
+-- Create index
+create index idx_Entrega_Pedido on entrega (cod_pedido);
 
 
-/*---
-drop table Possui
-drop table Produto
-drop table Entrega
-drop table Entregador
-drop table Pedido
-drop table Cliente*/
 
 select * from Cliente;
 select * from Entrega;
