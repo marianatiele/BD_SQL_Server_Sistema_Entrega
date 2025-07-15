@@ -14,3 +14,33 @@ exec Pedidos_avaliacao 5
 
 -- Para avaliação maior o igual a 3
 exec Pedidos_avaliacao 3
+
+
+-- Insere Pedidos 
+
+create procedure insere_pedido 
+@cod_pedido integer output,
+@itens varchar(50) output,
+@total_pedido money output,
+@cpf char(11) output 
+as 
+begin
+	insert into pedido (cod_pedido, itens, total_pedido, cpf) 
+	values (@cod_pedido, @itens, @total_pedido, @cpf);
+end;
+
+
+-- Insere Entrega
+
+create procedure Faz_entrega 
+@cod_entrega integer output,
+@avaliacao integer output,
+@status varchar(25) output,
+@data date output,
+@cnh varchar(15) output,
+@cod_pedido integer output
+as 
+begin
+	insert into entrega (cod_entrega, avaliacao,status, data, cnh, cod_pedido) 
+	values (@cod_entrega, @avaliacao, @status, @data,@cnh, @cod_pedido);
+end;
