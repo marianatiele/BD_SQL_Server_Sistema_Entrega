@@ -1,0 +1,11 @@
+Política de Backup
+
+Durante o período de 24 horas, serão realizados 4 backups com diferentes tipos e horários:
+
+01:00 da manhã – Backup Full da base de dados (DATABASE WITH INIT)
+
+06:00 da manhã – Backup Incremental dos logs de transações (LOG WITH NOINIT)
+
+12:00 (meio-dia) – Backup Diferencial da base de dados (DATABASE WITH DIFFERENTIAL)
+
+21:00 (9 da noite) – Backup Incremental dos logs de transações (LOG WITH NOINIT)
