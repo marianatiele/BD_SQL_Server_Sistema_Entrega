@@ -1,0 +1,2 @@
+Farei o deploy do banco o SQL Server na AWS RDS
+
