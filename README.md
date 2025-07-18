@@ -37,6 +37,7 @@ Foi criado um **modelo conceitual, lógico e físico** para o banco de dados **S
 * **SQL Server Management Studio (SSMS)**
 * **BrModelo 3**
 * **DBeaver**
+* **AWS - RDS**
 
 ---
 
