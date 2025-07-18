@@ -1,2 +1,13 @@
-Farei o deploy do banco o SQL Server na AWS RDS
+Deploy da Instância de Banco de Dados na AWS
+Foi criada uma instância Amazon RDS utilizando o SQL Server 2019 para hospedar o banco de dados do projeto. A configuração inicial da instância inclui:
+
+Versão do banco: SQL Server 2019
+
+Armazenamento inicial: 20 GB
+
+Backup automático habilitado, garantindo a recuperação dos dados em caso de falhas
+
+Configuração de segurança para acesso controlado via Security Groups na AWS
+
+O banco de dados e suas tabelas foram criados na nuvem utilizando scripts SQL desenvolvidos localmente. 
 
