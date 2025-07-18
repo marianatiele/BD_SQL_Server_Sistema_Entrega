@@ -96,7 +96,12 @@ Para garantir a segurança e a integridade dos dados do sistema, foram definidos
 3. Teste consultas e validações de integridade referencial.
 
 ---
+## Deploy
 
+O banco de dados utilizado neste projeto está hospedado no Amazon RDS (Relational Database Service), utilizando uma instância do SQL Server.
+A conexão com o banco foi realizada com sucesso utilizando a ferramenta **DBeaver**, através do endpoint da instância RDS, porta 1433, usuário e senha (essas credenciais não estão incluídas neste repositório por questões de segurança).
+ 
+---
 ## 📎 Autor
 
 Projeto desenvolvido como parte do portfólio pessoal para prática de **Administração e Engenharia de Banco de Dados**.
