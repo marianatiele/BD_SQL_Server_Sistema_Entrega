@@ -1,1 +1,7 @@
-ola
+Criação de roles e usuários.
+
+Scripts de permissões (GRANT, REVOKE).
+
+Políticas de autenticação e boas práticas de senha.
+
+Exemplo de criptografia de dados sensíveis.
