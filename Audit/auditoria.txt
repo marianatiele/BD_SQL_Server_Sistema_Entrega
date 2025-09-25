@@ -1,1 +1,5 @@
-Essa pasta vai armazenar os dados de auditoria do banco
+Triggers para logar alterações críticas (ex.: update/delete em tabelas sensíveis).
+
+Tabelas de auditoria (quem alterou, quando e o que).
+
+Exemplos de consulta aos logs.
