@@ -1,0 +1,5 @@
+Scripts de métricas de performance (uso de CPU, queries lentas, locks).
+
+Queries para acompanhar crescimento de tabelas/índices.
+
+Export para ferramentas como Grafana ou CloudWatch.
