@@ -1,4 +1,4 @@
-use bd_entrega
+use bd_entrega; 
 -- quem comprou e o quê? e valor?
 select  c.cpf, c.nome, p.itens, p.total_pedido 
 from Cliente c inner join Pedido p on p.cpf = c.cpf;
