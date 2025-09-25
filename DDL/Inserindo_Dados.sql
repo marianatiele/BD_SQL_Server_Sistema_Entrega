@@ -1,5 +1,7 @@
 -- Inserindo dados em Cliente
 
+use bd_entrega;
+
 insert into Cliente values ('52364879240', 'Joana Sisi', 89789674582, 'Lauro de Freitas', 'Rua das Margaridas', 'Centro', 615);
 insert into Cliente values ('71234567890', 'Carlos Souza', 99887766554, 'Salvador', 'Av. Brasil', 'Itapuã', 120);
 insert into Cliente values ('65432178901', 'Ana Clara', 98765432100, 'Feira de Santana', 'Rua do Sol', 'Kalilândia', 45);

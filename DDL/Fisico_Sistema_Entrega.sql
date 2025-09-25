@@ -1,4 +1,4 @@
-use teste;
+use bd_entrega;
 -- SQL Server 
 /* Lógico_Sistema_Entrega: */
 
