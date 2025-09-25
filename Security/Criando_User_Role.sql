@@ -6,4 +6,4 @@ create user teste2 with password = '@teste10';
 
 
 
-select * from pedido;
+select * from Pedido;
